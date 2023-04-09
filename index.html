@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Список завдань</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <div class="container">
+
+    <div class="create-task-block">
+      <form class="create-task-form">
+        <h3 class="task-title">Нове завдання</h3>
+        <div class="input-field">
+          <input type="text" name="task" class="task-input">
+        </div>
+        <button type="submit" class="btn">Додати завдання</button>
+      </form>
+    </div>
+
+    <div class="filter-task-block">
+      <h3 class="task-title">Список завдань</h3>
+      <div class="input-field">
+        <input type="text" name="filter" class="filter-input" placeholder="Пошук завдань">
+      </div>
+      <ul class="collection"></ul>
+      <button class="clear-tasks">Видалити всі завдання</button>
+    </div>
+
+  </div>
+  <script src='main.js'></script>
+</body>
+</html>
